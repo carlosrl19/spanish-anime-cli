@@ -2,7 +2,11 @@
 <div align="center">
   <h1>Anime-cli</h1>
  </div>
- 
+
+![npm](https://img.shields.io/npm/v/@genzyy/anime-cli?color=pink&style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/genzyy/anime-cli?style=for-the-badge)
+![npm](https://img.shields.io/npm/dw/@genzyy/anime-cli?color=orange&style=for-the-badge)
+![maintained?](https://img.shields.io/badge/maintained%3F-YES-important?style=for-the-badge)
 
 ## What it's about
 
