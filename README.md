@@ -12,15 +12,15 @@
 
 Spanish Anime CLI is a commandline app created using bash to watch sub-spanish / latin anime from a linux terminal client. 
 
-It's depends to MPV Player, so you have to install it.
+It's depends to mpv, grep, sed & curl , so you have to install it.
 
 Debian / Ubuntu based distros:
 ```bash
-  sudo apt install mpv
+  sudo apt install mpv grep sed curl
 ```
 Arch based distros:
 ```bash
-  sudo pacman -S mpv
+  sudo pacman -S mpv grep sed curl
 ```
 
 ## Usage
