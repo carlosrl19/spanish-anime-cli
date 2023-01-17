@@ -1,6 +1,5 @@
 #!/bin/sh
 
-# I'm sorry in advance for my deficient sed skills ¯\_(ツ)_/¯
 # dependencies: grep sed curl video_player
 # video_player ( needs to be able to play urls )
 player_fn="mpv"
