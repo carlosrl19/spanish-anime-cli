@@ -1,6 +1,4 @@
 #!/bin/sh
-
-# dependencies: grep sed curl video_player
 # video_player ( needs to be able to play urls )
 player_fn="mpv"
 
@@ -460,11 +458,11 @@ append_history
 open_selection
 
 while :; do
-	printf "${c_green}\nSI EL EPISODIO NO COMIENZA A REPRODUCIRSE EN 15 SEGUNDOS:\n"
+	printf "${c_green}\nSi tienes problemas para reproducir el episodio:\n"
 	printf "${c_magenta}1. Presiona [r] para intentar de reproducirlo nuevamente\n${c_blue}2. Presiona [t] para intentar conectar desde otro servidor."
-	printf "\n${c_green}\nAhora mismo estás viendo: %s episodio ${c_cyan}%d/%d\n" "$selection_id" $episode $last_ep_number
+	printf "\n${c_green}\nAhora mismo estás viendo: %s \nEpisodio ${c_cyan}%d/%d\n" "$selection_id" $episode $last_ep_number
 	if [ "$episode" -ne "$last_ep_number" ]; then
-		printf "$c_blue[${c_cyan}%s$c_blue] $c_yellow%s$c_reset\n" "n" "Siguiente episodio"
+		printf "\n$c_blue[${c_cyan}%s$c_blue] $c_yellow%s$c_reset\n" "n" "Siguiente episodio"
 	fi
 	if [ "$episode" -ne "1" ]; then
 		printf "$c_blue[${c_cyan}%s$c_blue] $c_magenta%s$c_reset\n" "p" "Anterior episodio"
@@ -476,7 +474,7 @@ while :; do
 	printf "$c_blue[${c_cyan}%s$c_blue] $c_blue%s$c_reset\n" "t" "Intentar en otro servidor"
 	printf "$c_blue[${c_cyan}%s$c_blue] $c_cyan%s$c_reset\n" "a" "Buscar otro anime"
 	printf "$c_blue[${c_cyan}%s$c_blue] $c_red%s$c_reset\n" "q" "Salir"
-	printf "${c_blue}Elige una opción:${c_green} "
+	printf "\n${c_blue}Elige una opción:${c_green} "
 	read choice
 	printf "$c_reset"
 	case $choice in
