@@ -20,7 +20,12 @@ Arch based distros:
 
 ## Usage
 
-First you have downloaded the app, then you can run anime-cli in your terminal:
+First you have to download the app, then:
+```bash
+  chmod +x hani-cli
+```
+
+Now you can run anime-cli in your terminal:
 ```bash
   ./hani-cli <anime-name>
 ```
